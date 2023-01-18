@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  background-color: #8E44AD;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+body main {
+  background-color: #FFF;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.61);
+  -webkit-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.61);
+}
+body main .steps .step-items {
+  color: #808080;
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+  display: flex;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+body main .steps .step-items .number {
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+body main .steps .step-items.active .number {
+  background-color: #2A80B9;
+  color: #FFF;
+}
+body main .steps .step-items.active .description {
+  color: #000;
+}
+body main .step-selectors {
+  margin-right: 5rem;
+}
+body main .step-selectors .title-description {
+  margin-top: 0;
+  font-weight: 500;
+}
+body main .step-selectors .buttons .btn {
+  border: none;
+  padding: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+body main .step-selectors .buttons .btn:active {
+  transform: translateY(3px);
+}
+body main .step-selectors .buttons .btn-back:hover {
+  background-color: #DD7973;
+  color: #FFF;
+}
+body main .step-selectors .buttons .btn-submit:hover {
+  background-color: #5ADBB5;
+  color: #000;
+}/*# sourceMappingURL=style.css.map */
